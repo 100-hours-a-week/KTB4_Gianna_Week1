@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4fd793-0553-4a67-92a6-7cf05ec7e1b7" name="변경" comment="feat: 로또 키오스크 기능 구현" />
+    <list default="true" id="3b4fd793-0553-4a67-92a6-7cf05ec7e1b7" name="변경" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,17 +16,6 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Rebase.Settings">
-    <option name="NEW_BASE" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,9 +32,6 @@
     "accountId": "36c87174-51fb-4c96-97ba-94462d0fc1b2"
   }
 }]]></component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 5
@@ -66,7 +54,7 @@
     "git.auto.fetch.suggestion.counter": "2",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/yeobinlee/IdeaProjects/KTB4_Gianna_Week1/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -97,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778897350544</updated>
-      <workItem from="1778897351912" duration="53913000" />
+      <workItem from="1778897351912" duration="745000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -131,55 +119,7 @@
       <option name="project" value="LOCAL" />
       <updated>1778897958367</updated>
     </task>
-    <task id="LOCAL-00005" summary="test commit">
-      <option name="closed" value="true" />
-      <created>1778898109548</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1778898109548</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: 로또 키오스크 기능 구현">
-      <option name="closed" value="true" />
-      <created>1779004010147</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1779004010147</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: 로또 키오스크 기능 구현">
-      <option name="closed" value="true" />
-      <created>1779005574578</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1779005574578</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: 로또 키오스크 기능 구현">
-      <option name="closed" value="true" />
-      <created>1779005988625</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1779005988625</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: 로또 키오스크 기능 구현">
-      <option name="closed" value="true" />
-      <created>1779006027118</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1779006027118</updated>
-    </task>
-    <task id="LOCAL-00010" summary="feat: 로또 키오스크 기능 구현">
-      <option name="closed" value="true" />
-      <created>1779007758082</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1779007758082</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,8 +127,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <MESSAGE value="test commit" />
-    <MESSAGE value="feat: 로또 키오스크 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 로또 키오스크 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
