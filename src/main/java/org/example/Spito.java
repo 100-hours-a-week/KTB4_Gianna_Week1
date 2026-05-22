@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import static org.example.IO.printResult;
 
-public class Spito extends Lottery{
+public class Spito extends InstantLottery {
     final private ArrayList<Integer> result = new ArrayList<>();
     public Spito(int money){
         super(money);

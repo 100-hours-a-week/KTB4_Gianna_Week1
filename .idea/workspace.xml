@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4fd793-0553-4a67-92a6-7cf05ec7e1b7" name="변경" comment="fix(Lottery): makePrizeMsg() 당첨금 계산 로직 오류 수정">
+    <list default="true" id="3b4fd793-0553-4a67-92a6-7cf05ec7e1b7" name="변경" comment="refactor(IO): 입출력 메서드명 변경&#10;- 자바 컨벤션 고려">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InstantLottery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Gamble.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lottery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Spito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Spito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Validator/MoneyInputValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Validator/OptionValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Validator/Validator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
       <workItem from="1779092468928" duration="1668000" />
       <workItem from="1779253710055" duration="652000" />
       <workItem from="1779279982296" duration="79000" />
-      <workItem from="1779450283968" duration="2897000" />
+      <workItem from="1779450283968" duration="3954000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -298,7 +296,31 @@
       <option name="project" value="LOCAL" />
       <updated>1779380904457</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="delete(Validator): 필요 없는 로직 삭제">
+      <option name="closed" value="true" />
+      <created>1779453985046</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1779453985046</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor(IO): 입출력 메서드명 변경&#10;- 자바 컨벤션 고려">
+      <option name="closed" value="true" />
+      <created>1779454027456</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1779454027456</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor(IO): 입출력 메서드명 변경&#10;- 자바 컨벤션 고려">
+      <option name="closed" value="true" />
+      <created>1779454038028</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1779454038028</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +337,8 @@
     <MESSAGE value="fix: 빠진 Validator 파일 추가" />
     <MESSAGE value="fix: main에 잘못 push된 로직 수정" />
     <MESSAGE value="fix(Lottery): makePrizeMsg() 당첨금 계산 로직 오류 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(Lottery): makePrizeMsg() 당첨금 계산 로직 오류 수정" />
+    <MESSAGE value="delete(Validator): 필요 없는 로직 삭제" />
+    <MESSAGE value="refactor(IO): 입출력 메서드명 변경&#10;- 자바 컨벤션 고려" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(IO): 입출력 메서드명 변경&#10;- 자바 컨벤션 고려" />
   </component>
 </project>

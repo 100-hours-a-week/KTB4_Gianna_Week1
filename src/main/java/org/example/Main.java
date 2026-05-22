@@ -41,9 +41,9 @@ public class Main {
     }
 
     static void lotteryGame(int userMoney) {
-        Lottery lottery = new Lottery(userMoney);
-        lottery.draw();
-        lottery.match();
-        lottery.makeResultMsg();
+        InstantLottery instantLottery = new InstantLottery(userMoney);
+        instantLottery.draw();
+        instantLottery.match();
+        instantLottery.makeResultMsg();
     }
 }
