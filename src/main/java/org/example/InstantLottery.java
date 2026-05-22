@@ -16,14 +16,14 @@ public class InstantLottery extends Lottery {
     public InstantLottery(int money){
         saveBet(money);
         this.matchCount= new int[money/1000];
-        this.setPricePerGame(1000);
+        this.setPrice(1000);
         this.maxLimit = 45;
     }
     public void saveBet(int money){
-        super.setBetMoney(money);
+        super.setAvailableStock(money);
     }
     protected void draw(){
-        for(int i =0; i<this.betMoney / super.pricePerGame; i++) {
+        for(int i = 0; i<this.availableStock / super.price; i++) {
             //6자리 랜덤 뽑기
             ArrayList<Integer> rowsList = makeSortedRow();
             this.gameList.add(rowsList);

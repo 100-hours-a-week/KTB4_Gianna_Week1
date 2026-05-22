@@ -1,11 +1,11 @@
 package org.example;
 
 public class Lottery {
-    protected int betMoney = 0;
-    protected int pricePerGame = 0;
+    protected int availableStock = 0;
+    protected int price = 0;
 
-    protected void setBetMoney(int money){
-        this.betMoney = money;
+    protected void setAvailableStock(int amount){
+        this.availableStock = amount;
     }
-    protected void setPricePerGame(int price){this.pricePerGame = price; }
+    protected void setPrice(int price){this.price = price; }
 }
