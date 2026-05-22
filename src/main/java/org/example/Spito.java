@@ -1,7 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
-import static org.example.IO.PrintResult;
+import static org.example.IO.printResult;
 
 public class Spito extends Lottery{
     final private ArrayList<Integer> result = new ArrayList<>();
@@ -24,12 +24,12 @@ public class Spito extends Lottery{
         }
         String winningNums = String.format("\n<<각 게임의 당첨 번호>>\n %s", this.winningNumbers.toString());
         sb.append(winningNums);
-        PrintResult(sb.toString());
+        printResult(sb.toString());
         this.sumPrize();
     }
 
     private void sumPrize(){
-        PrintResult("\n맞춘 게임 당 당첨금은 1500원이므로, 총 당첨금은 " + this.result.size() * 1500 + "원 입니다.");
+        printResult("\n맞춘 게임 당 당첨금은 1500원이므로, 총 당첨금은 " + this.result.size() * 1500 + "원 입니다.");
     }
 
     @Override

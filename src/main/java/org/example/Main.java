@@ -1,18 +1,25 @@
 package org.example;
+
 import static org.example.IO.*;
 
 public class Main {
     static void main() {
-        String userChoice = PrintIntro();
-        if (userChoice.equals("3")) {
-            PrintQuit();
-        } else {
-            progress(userChoice);
+        try{
+            String userChoice = printIntro();
+            if (userChoice.equals("3")) {
+                printQuit();
+            } else {
+                progress(userChoice);
+            }
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+            main();
         }
+
     }
 
     static void progress(String userChoice) {
-        int userMoney = Integer.parseInt(GetMoney());
+        int userMoney = Integer.parseInt(getMoney());
 
         switch (userChoice) {
             case "1":
@@ -22,7 +29,7 @@ public class Main {
                 lotteryGame(userMoney);
                 break;
             default:
-                PrintQuit();
+                printQuit();
         }
     }
 

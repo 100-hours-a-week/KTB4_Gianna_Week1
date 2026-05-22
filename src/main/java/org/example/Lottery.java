@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.example.IO.PrintResult;
+import static org.example.IO.printResult;
 
 public class Lottery extends Gamble{
     protected ArrayList<ArrayList<Integer>> gameList = new ArrayList<>();
@@ -85,7 +85,7 @@ public class Lottery extends Gamble{
 
         int[] prizeResult = sumPrize();
         sb.append(makePrizeMsg(prizeResult));
-        PrintResult(sb.toString());
+        printResult(sb.toString());
     }
 
     private int[] sumPrize(){
