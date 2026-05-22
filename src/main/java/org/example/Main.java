@@ -1,7 +1,5 @@
 package org.example;
 
-import java.lang.constant.ConstantDescs;
-
 import static org.example.IO.*;
 
 public class Main {
@@ -36,7 +34,7 @@ public class Main {
 
     static void spitoGame(int userMoney) {
         Spito spito = new Spito();
-        //spito.scratch();
+        spito.scratch();
     }
 
     static void lotteryGame() {
