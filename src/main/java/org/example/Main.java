@@ -1,12 +1,14 @@
 package org.example;
 
+import java.lang.constant.ConstantDescs;
+
 import static org.example.IO.*;
 
 public class Main {
     static void main() {
         try{
             String userChoice = printIntro();
-            if (userChoice.equals("3")) {
+            if (userChoice.equals(Constants.OPTION_QUIT)) {
                 printQuit();
             } else {
                 progress(userChoice);
@@ -21,10 +23,10 @@ public class Main {
     static void progress(String userChoice) {
 
         switch (userChoice) {
-            case "1":
+            case Constants.OPTION_SPITO:
                 spitoGame(Integer.parseInt(getMoney()));
                 break;
-            case "2":
+            case Constants.OPTION_LOTTO:
                 lotteryGame();
                 break;
             default:
