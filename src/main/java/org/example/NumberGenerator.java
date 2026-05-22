@@ -3,7 +3,6 @@ package org.example;
 import java.util.*;
 
 public class NumberGenerator {
-    private ArrayList<Integer> row;
     public NumberGenerator(){}
     private int pickRandomNum(int maxNumber){
         Random random = new Random();

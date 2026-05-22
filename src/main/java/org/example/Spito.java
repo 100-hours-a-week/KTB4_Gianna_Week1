@@ -1,49 +1,21 @@
 package org.example;
 
 import java.util.ArrayList;
-import static org.example.IO.printResult;
+import java.util.List;
 
 public class Spito extends InstantLottery {
-    final private ArrayList<Integer> result = new ArrayList<>();
-    public Spito(int money){
-        super(money);
-        this.maxLimit = 9;
-    }
+    private final NumberGenerator numberGenerator;
+    protected List<Integer> gameList = new ArrayList<>();
+    protected int winningNumber;
 
-    public void make() {
+    public Spito() {
+        this.numberGenerator = new NumberGenerator();
         this.draw();
     }
 
-    public void makeResultMsg(){
-        StringBuilder sb = new StringBuilder("\n   <<뽑은 내역>>\n");
-        for(int i =0; i<this.gameList.size(); i++){
-            String endWord = "\n";
-            if(this.result.contains(i)) endWord = " - V\n";
-            String gamelist = this.gameList.get(i).toString() +  endWord;
-            sb.append(gamelist);
-        }
-        String winningNums = String.format("\n<<각 게임의 당첨 번호>>\n %s", this.winningNumbers.toString());
-        sb.append(winningNums);
-        printResult(sb.toString());
-        this.sumPrize();
-    }
-
-    private void sumPrize(){
-        printResult("\n맞춘 게임 당 당첨금은 1500원이므로, 총 당첨금은 " + this.result.size() * 1500 + "원 입니다.");
-    }
-
     @Override
-    protected void setWinningNumber(){
-        int randNum = super.pickRandomNum();
-        this.winningNumbers.add(randNum);
-    }
-
-    @Override
-    public void match() {
-        for(int i =0; i<this.gameList.size(); i++){
-            this.setWinningNumber();
-            int winningNumber = this.winningNumbers.getLast();
-            if(this.gameList.get(i).contains(winningNumber)) this.result.add(i);
-        }
+    protected void draw() {
+        this.gameList = numberGenerator.draw(Constants.SPITO_MAX_NUMBER, Constants.LOTTERY_COUNT);
+        this.winningNumber =numberGenerator.draw(Constants.SPITO_MAX_NUMBER, Constants.SPITO_WINNINGNUM_COUNT).getFirst();
     }
 }

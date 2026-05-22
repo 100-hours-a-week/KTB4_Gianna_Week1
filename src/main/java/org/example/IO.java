@@ -15,6 +15,15 @@ public class IO {
         System.out.println(result);
     }
 
+    static void printBlockedOption(){
+        System.out.println("해당 기능은 현재 개발 중에 있습니다.\n다른 옵션을 선택해주세요.\n죄송합니다.");
+    }
+
+    static void printQuit(){
+        System.out.println("\n----- <<프로그램 종료>> -----");
+        System.out.print("이용해주셔서 감사합니다.\n좋은 하루 보내세요!");
+    }
+
     static String getOption() {
         System.out.print(">>> ");
         return sc.next();
@@ -23,10 +32,5 @@ public class IO {
     static String getMoney(){
         System.out.print("\n구매하실 금액을 입력해주세요. (1000원 단위)\n>>> ");
         return sc.next();
-    }
-
-    static void printQuit(){
-        System.out.println("\n----- <<프로그램 종료>> -----");
-        System.out.print("이용해주셔서 감사합니다.\n좋은 하루 보내세요!");
     }
 }
