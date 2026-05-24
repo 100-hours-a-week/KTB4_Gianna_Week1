@@ -24,6 +24,10 @@ public class IO {
         System.out.println("해당 기능은 현재 개발 중에 있습니다.\n다른 옵션을 선택해주세요.\n죄송합니다.");
     }
 
+    static void printCountOfPeople(int count){
+        System.out.printf("%d명의 사람이 스피또를 뽑습니다.\n", count);
+    }
+
     static void printQuit(){
         System.out.println("\n----- <<프로그램 종료>> -----");
         System.out.println("이용해주셔서 감사합니다.\n좋은 하루 보내세요!");
