@@ -26,7 +26,6 @@ public class SpitoKiosk {
         }
     }
 
-    public int getStock(){ return this.availableStock; }
     public void checkStockSaleable(){
         if(this.availableStock==0){
             this.isSaleable = false;
@@ -39,23 +38,24 @@ public class SpitoKiosk {
         lock.lock();
         try {
             Thread.sleep(100);
-            if(this.availableStock == 0) {
+            if(this.availableStock == Constants.EMPTY_COUNT) {
                 user.setSpitoListEmpty();
             }else{
                 int userSpitoCount = new Random().nextInt(this.availableStock) + 1;
                 this.availableStock -= userSpitoCount;
-                user.setSpitoList(spitoGame(userSpitoCount));
+                user.setSpitoList(makeSpitoList(userSpitoCount));
             }
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
             Thread.currentThread().interrupt();
         } finally {
             user.makeResultMsg();
+            user.printResultMsg();
             lock.unlock();
         }
     }
 
-    private List<Spito> spitoGame(int count) {
+    private List<Spito> makeSpitoList(int count) {
         List<Spito> spitoList = new ArrayList<>();
         for(int i =0; i< count; i++){
             Spito spito = new Spito();

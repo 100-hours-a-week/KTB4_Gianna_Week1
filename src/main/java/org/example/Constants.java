@@ -12,5 +12,6 @@ public class Constants {
     public static final int SPITO_WINNINGNUM_COUNT = 1;
 
     public static final int FRIEND_MAX_COUNT = 10;
-    public static final int DAILY_STOCK_MAX_COUNT = 100;
+    public static final int DAILY_STOCK_MAX_COUNT = 50;
+    public static final int EMPTY_COUNT = 0;
 }
