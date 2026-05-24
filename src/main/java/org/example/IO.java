@@ -14,8 +14,10 @@ public class IO {
         System.out.print("1.스피또 발행\n2.자동 로또 발행 (현재 개발 중 - 사용 불가)\n3.종료\n");
     }
 
-    static void printResult(String result){
+    static void printResult(StringBuilder result){
         System.out.println(result);
+        System.out.println("===================");
+
     }
 
     static void printBlockedOption(){
@@ -29,11 +31,6 @@ public class IO {
 
     static String getOption() {
         System.out.print(">>> ");
-        return sc.next();
-    }
-
-    static String getMoney(){
-        System.out.print("\n구매하실 금액을 입력해주세요. (1000원 단위)\n>>> ");
         return sc.next();
     }
 }

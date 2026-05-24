@@ -27,8 +27,6 @@ public class SpitoKioskProcess {
     }
 
     static void startSpito(SpitoKiosk spitoKiosk){
-        System.out.printf("stock : %d\n\n", spitoKiosk.getStock());
-        System.out.println(userList.size());
         if(spitoKiosk.isSaleable){
             try {
                 for (Thread thread : threadList){
@@ -37,15 +35,10 @@ public class SpitoKioskProcess {
                 for (Thread thread : threadList){
                     thread.join();
                 }
-                for(User user : userList.values()){
-                    System.out.println(user.getResultMsgSB());
-                    System.out.println("===================");
-                }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }else{
-            System.out.println("오류 : 재고 부족1");
             spitoKiosk.setSaleableFalse();
         }
         spitoKiosk.checkStockSaleable();
