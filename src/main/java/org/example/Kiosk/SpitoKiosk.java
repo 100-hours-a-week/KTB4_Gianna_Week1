@@ -1,4 +1,8 @@
-package org.example;
+package org.example.Kiosk;
+
+import org.example.Constants;
+import org.example.Lottery.Spito;
+import org.example.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,33 +10,23 @@ import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static org.example.SpitoKioskProcess.*;
+import static org.example.IO.printErrorMsg;
+import static org.example.Kiosk.SpitoKioskProcess.*;
 
-public class SpitoKiosk {
+public class SpitoKiosk extends Kiosk{
     private final Lock lock = new ReentrantLock();
-    private int availableStock;
-
-    public boolean isSaleable;
-    public boolean isSoldOut = false;
 
     public SpitoKiosk(int dailyStockCount) {
-        this.availableStock = dailyStockCount;
-        this.isSaleable = true;
+        super(dailyStockCount);
     }
+
     public void startKiosk(){
         if(this.isSaleable){
+            //SpitoKioskProcess에서 진행
             initializeProcess(this);
             startSpito(this);
         }
     }
-
-    public void checkStockSaleable(){
-        if(this.availableStock==0){
-            this.isSaleable = false;
-            this.isSoldOut = true;
-        }
-    }
-    public void setSaleableFalse(){ this.isSaleable = false; }
 
     public void tryBuy(User user){
         lock.lock();
@@ -46,7 +40,7 @@ public class SpitoKiosk {
                 user.setSpitoList(makeSpitoList(userSpitoCount));
             }
         } catch (InterruptedException e) {
-            System.out.println(e.getMessage());
+            printErrorMsg(e.getMessage());
             Thread.currentThread().interrupt();
         } finally {
             user.makeResultMsg();

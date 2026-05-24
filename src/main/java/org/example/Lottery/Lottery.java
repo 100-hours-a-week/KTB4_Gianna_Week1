@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Lottery;
 
 public class Lottery {
     protected int prize;

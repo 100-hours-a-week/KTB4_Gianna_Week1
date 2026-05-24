@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.Lottery.Spito;
+
 import java.util.ArrayList;
 import java.util.List;
 import static org.example.IO.printResult;

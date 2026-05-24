@@ -1,7 +1,11 @@
-package org.example;
+package org.example.Kiosk;
+
+import org.example.Constants;
+import org.example.User;
 
 import java.util.*;
 
+import static org.example.IO.printAvailableStock;
 import static org.example.IO.printCountOfPeople;
 
 public class SpitoKioskProcess {
@@ -27,7 +31,9 @@ public class SpitoKioskProcess {
     }
 
     static void startSpito(SpitoKiosk spitoKiosk){
+        printAvailableStock(spitoKiosk.getAvailableStock());
         printCountOfPeople(userList.size());
+
         if(spitoKiosk.isSaleable){
             try {
                 for (Thread thread : threadList){
@@ -43,6 +49,7 @@ public class SpitoKioskProcess {
             spitoKiosk.setSaleableFalse();
         }
         spitoKiosk.checkStockSaleable();
+        printAvailableStock(spitoKiosk.getAvailableStock());
     }
 
     static private List<String> pickRandomName(int nameCount){

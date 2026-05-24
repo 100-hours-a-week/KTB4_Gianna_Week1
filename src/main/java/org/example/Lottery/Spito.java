@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Lottery;
+
+import org.example.Constants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +22,7 @@ public class Spito extends InstantLottery {
     }
 
     @Override
-    protected void scratch(){
+    public void scratch(){
         this.isWin = this.numberMatcher.SpitoMatcher(gameList, winningNumber);
     }
 

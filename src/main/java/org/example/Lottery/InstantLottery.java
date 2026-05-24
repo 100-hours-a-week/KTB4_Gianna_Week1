@@ -1,4 +1,7 @@
-package org.example;
+package org.example.Lottery;
+
+import org.example.Composition.NumberGenerator;
+import org.example.Composition.NumberMatcher;
 
 public class InstantLottery extends Lottery {
     protected final NumberGenerator numberGenerator;
