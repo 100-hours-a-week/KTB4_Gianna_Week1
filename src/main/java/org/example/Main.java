@@ -28,7 +28,7 @@ public class Main {
     }
 
     static SpitoKiosk initializeKiosk(){
-        int dailyStockCount = new Random().nextInt(40)+1;
+        int dailyStockCount = new Random().nextInt(Constants.DAILY_STOCK_MAX_COUNT)+1;
         printOpenStore();
         return new SpitoKiosk(dailyStockCount);
     }
