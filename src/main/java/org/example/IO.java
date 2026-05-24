@@ -35,6 +35,11 @@ public class IO {
     public static void printErrorMsg(String errorMsg){
         System.out.printf("error : %s", errorMsg);
     }
+
+    public static void printMsg(String msg){
+        System.out.println(msg);
+    }
+
     static void printQuit(){
         System.out.println("\n----- <<프로그램 종료>> -----");
         System.out.println("이용해주셔서 감사합니다.\n좋은 하루 보내세요!");

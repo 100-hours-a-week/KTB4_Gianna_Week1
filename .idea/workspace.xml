@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4fd793-0553-4a67-92a6-7cf05ec7e1b7" name="변경" comment="feat(SpitoKiosk): 스피또 뽑는 사람 이름 랜덤 출력하는 로직 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Kiosk/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" afterDir="false" />
+    <list default="true" id="3b4fd793-0553-4a67-92a6-7cf05ec7e1b7" name="변경" comment="refactor: 패키지 분리 및 키오스크 클래스 상속 추가">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InstantLottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lottery/InstantLottery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lottery/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Kiosk/SpitoKioskProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Kiosk/SpitoKioskProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Composition/NumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NumberMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Composition/NumberMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Spito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lottery/Spito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SpitoKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Kiosk/SpitoKiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SpitoKioskProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Kiosk/SpitoKioskProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -399,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779605085668</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="refactor: 패키지 분리 및 키오스크 클래스 상속 추가">
+      <option name="closed" value="true" />
+      <created>1779611609715</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1779611609715</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +426,8 @@
     <MESSAGE value="feat(SpitoKiosk): 스피또 판매 로직 수정&#10;- 로또 기능 비활성화 및 스피또 다인원 &amp; 랜덤 구매 활성화" />
     <MESSAGE value="feat(NumberMatcher): 당첨 여부 확인 로직 컴포지션으로 추가" />
     <MESSAGE value="feat(SpitoKiosk): 스피또 뽑는 사람 이름 랜덤 출력하는 로직 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(SpitoKiosk): 스피또 뽑는 사람 이름 랜덤 출력하는 로직 추가" />
+    <MESSAGE value="refactor: 패키지 분리 및 키오스크 클래스 상속 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 패키지 분리 및 키오스크 클래스 상속 추가" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
